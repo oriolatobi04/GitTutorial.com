@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Restaurant Feedback Form</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email">
+
+      <label for="rating">Rating</label>
+      <select id="rating" name="rating" required>
+        <option value="">Choose a rating</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Very Good</option>
+        <option value="3">3 - Good</option>
+        <option value="2">2 - Fair</option>
+        <option value="1">1 - Poor</option>
+      </select>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
